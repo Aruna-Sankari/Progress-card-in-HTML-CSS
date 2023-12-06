@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.column {
+  width: 25%;
+  padding: 0 10px;
+}
+.row {
+margin: 100px -5px;
+display:flex;
+flex-wrap:wrap;
+}
+img{
+opacity:0.2;
+}
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color:hotpink;
+  border-radius:15px;
+  opacity:0.8;
+}
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color:darkturquoise;
+  border-radius:15px;
+  opacity:0.8;
+}
+.card3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color:mediumseagreen;
+  border-radius:15px;
+  opacity:0.8;
+}
+.card4 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color:coral;
+  border-radius:15px;
+  opacity:0.8;
+}
+.card1:hover{
+box-shadow: 0 8px 8px 0 black;
+font-size:17px;
+}
+.card2:hover{
+box-shadow: 0 8px 8px 0 hotpink;
+font-size:17px;
+}
+.card3:hover{
+box-shadow: 0 4px 8px 0 maroon;
+font-size:17px;
+}
+.card4:hover{
+box-shadow: 0 4px 8px 0 green;
+font-size:17px;
+}
+</style>
+</head>
+<body>
+<h2 style="text-align:center">Progress Card</h2>
+<div class="row">
+  <div class="column">
+    <div class="card1">
+      <img src="Images\shopping.png" width="120px"height="120px" align="right">
+	  <h3 style="font-size:17px;color:white; font-family:arial; text-align:left">New Orders</h3>
+	  <p style="text-align:left;font-size:23px;color:black"><b>3,243&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12.5%&uarr;</b></p>
+      <progress id="file" value="32" max="100">32%</progress>
+	 </div>
+  </div>
+<div class="column">
+    <div class="card2">
+    <img src="Images\customer.png" width="125px"height="125px" align="right">
+	  <h3 style="font-size:17px;color:white; font-family:arial; text-align:left">Customers</h3>
+	  <p style="text-align:left;font-size:23px;color:white"><b>15.07k&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9.23%&uarr;</b></p>
+      <progress id="file" value="35" max="100">35%</progress>
+	  </div>
+  </div>
+  <div class="column">
+    <div class="card3">
+      <img src="Images\ticket-41-256.png" width="125px"height="125px" align="right">
+	  <h3 style="font-size:17px;color:white; font-family:arial; text-align:left">Ticket Resolved</h3>
+	  <p style="text-align:left;font-size:23px;color:white"><b>578&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10%&uarr;</b></p>
+      <progress id="file" value="47" max="100">47%</progress>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card4">
+      <img src="=Images\dollar.jpg" width="120px"height="100px" align="right">
+	  <h3 style="font-size:17px;color:white; font-family:arial; text-align:left">Revenue Today</h3>
+	  <p style="text-align:left;font-size:23px;color:white"><b>$11.61k&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.5%&uarr;</b></p>
+      <progress id="file" value="40" max="100">47%</progress>
+    </div>
+  </div>
+</div>
+</body>
+</html>
